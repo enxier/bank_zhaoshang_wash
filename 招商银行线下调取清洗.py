@@ -15,10 +15,7 @@ def mkdir(path):
         print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + "    来自创建路径模块的消息：成功创建路径：" + path)
     else:
         print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + "    来自创建路径模块的消息：指定路径”" + path + "“已经存在，跳过创建步骤")
-数据源 = r'''C:\Users\Abluex\Desktop\反馈\20211119招商线下反馈\解压\20211119085412132846    28779093\20211119085412132846    28779093交易流水1.CSV
-C:\Users\Abluex\Desktop\反馈\20211119招商线下反馈\解压\20211119085412132846    28779093\20211119085412132846    28779093交易流水2.CSV
-C:\Users\Abluex\Desktop\反馈\20211119招商线下反馈\解压\20211119085427132846    27225276\20211119085427132846    27225276交易流水1.CSV
-C:\Users\Abluex\Desktop\反馈\20211119招商线下反馈\解压\20211119085434132846    66541587\20211119085434132846    66541587交易流水1.CSV'''
+数据源 = r'''    '''
 files = literal_eval("['" + 数据源.replace('\n' , "' , '").replace('\\' , "/") + "']")
 print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + '    已读取文件列表')
 ##创建‘银行明细清洗’文件夹
